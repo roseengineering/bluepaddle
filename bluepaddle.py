@@ -40,8 +40,8 @@ def advertising_payload(limited_disc=False, br_edr=False, name=None,
     _append(_ADV_TYPE_APPEARANCE, struct.pack("<h", appearance))
     return payload
 
-# gatt uart service
 
+# gatt uart service
 
 _KEY_UUID = bluetooth.UUID("12d32121-b01c-11ea-91d2-3fd36973e665")
 _KEY_TX = (
@@ -121,8 +121,7 @@ class Key:
 PIN_DIT = 13
 PIN_DAH = 12
 
-# initialize
-
+# main
 
 def main():
     def onchange(state):
@@ -135,7 +134,6 @@ def main():
     key.irq(handler=onchange)
     while True:
         key.callback()
- 
 
 main()
 
