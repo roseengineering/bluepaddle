@@ -12,6 +12,7 @@ for BLE support.
 Connect the dit switch of the paddle (or the tip of the TRS connector)
 of the paddle to the ESP32's GPIO13 pin.  Next connect the dah switch 
 of the paddle (or the ring of the TRS connector) to ESP32's GPIO12 pin.
+And of course connect paddle common to ESP32's GND pin.
 
 Set the mac address of your ESP32 Bluetooth device in client.py.
 Install the bluepy python3 library on your host computer using 
