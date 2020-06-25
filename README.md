@@ -33,4 +33,11 @@ The host can read the paddle switch status or be notified of it.
 The status consists of one byte.  Bit 0 is set when the dit switch makes
 contact.  Bit 1 is set when the dah switch makes contact.
 
+### scanner.py
+
+Run the following to see all bluetooth clients:
+
+```
+$ sudo python3 scanner.py
+```
 
